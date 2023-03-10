@@ -1,0 +1,390 @@
+/* Setup CSS */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  transition: all 0.5s;
+}
+
+a {
+  text-decoration: none;
+}
+button {
+  border: none;
+  background-color: transparent;
+}
+h1,
+h4,
+h6 {
+  color: #ffffff;
+}
+.m-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.w-15 {
+  width: 150px;
+}
+
+/* Banner */
+.banner-h {
+  height: 40vw;
+}
+
+/* Cinema */
+.movieShow {
+  width: 220px;
+  height: 310px;
+}
+
+.cinema-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.movie-logo {
+  width: 80px;
+  height: 100px;
+}
+.cinema-scale:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.movie-title:hover {
+  color: #ee8b09;
+  transition: all 0.5s;
+}
+
+.cinema {
+  height: 300px;
+  overflow: auto;
+}
+
+.cinema-h {
+  height: 1000px;
+}
+
+.showtimes {
+  font-weight: 500;
+  color: #108f3e;
+  width: 45%;
+  border: 1px solid #e4e4e4;
+  cursor: pointer;
+  margin: 0px 16px 16px 0px;
+  padding: 8px;
+  border-radius: 4px;
+  text-decoration: none;
+  background-color: rgba(246, 246, 246, 0.5);
+}
+
+.theater{
+  width: 800px;
+  height: 556px;
+  margin: auto;
+}
+
+.showNav{
+  width: 200px;
+  border: 1px solid #1d2529;
+  background: #ffffff;
+  border-radius: 4px;
+    position: absolute;
+    top: 64px;
+    right: -60px;
+}
+/* Custom Scrollbar */
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(242, 15, 3);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(143, 235, 4);
+}
+
+.btn-style {
+  color: #ee8b09;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  background: none;
+  box-shadow: 0 0 0 48px #1d2529 inset;
+  border-radius: 8px;
+  transition: all 0.5s;
+}
+
+
+.btn-style:hover {
+  color: #ee8b09;
+  box-shadow: 0 0 0 2px #ee8b09 inset;
+}
+
+/* MoviShowing */
+.movieShowingPic {
+  width: 25vw;
+  border-radius: 4px;
+  height: 30vw;
+}
+
+/* Booking */
+
+.chair-col {
+  text-align: center;
+  line-height: 30px;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 600;
+  display: inline-block;
+  list-style: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: rgb(106, 102, 102);
+  margin-bottom: 16px;
+}
+
+.chairs {
+  color: #ffffff;
+  background-color: #514e4e;
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 14px;
+  align-items: baseline;
+  border: none;
+  border-radius: 4px;
+  width: 30px;
+  height: 30px;
+  transition: all 0.5s;
+}
+
+.chairs:hover {
+  background-color: #d10b0b;
+  color: #ffffff;
+  transition: all 0.5s;
+}
+
+/* Register */
+
+.ant-row {
+  display: block;
+}
+.ant-col-8 {
+  max-width: 100%;
+}
+.ant-col-14 {
+  display: none;
+}
+
+#components-layout-demo-side .logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
+}
+/* Login */
+.log {
+  background-image: url("./img/backapp.b46ef3a1.jpg");
+  height: 900px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.form-log {
+  background-color: white;
+  padding: 16px;
+  width: 80vw;
+  margin: auto;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.logOut:hover{
+  color: #d10b0b;
+  transition: all 0.5;
+}
+
+/* Admin add movie */
+.inputAddMovie {
+  border: 1px solid #848282;
+  border-radius: 4px;
+  padding: 2px;
+}
+
+.admin-logo {
+  background-image: url("./img/download.jpg");
+  width: 100%;
+  height: 80px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* responsive */
+@media (min-width: 577px) and (max-width: 768px) {
+  .table thead {
+    display: none;
+  }
+  .table,
+  .table body,
+  .table tr,
+  .table td {
+    display: block;
+    width: 490px;
+  }
+  .table tr {
+    margin-bottom: 15px;
+    border: 1px solid;
+    font-size: 15px;
+    margin-left: 0 !important;
+  }
+  .table tbody tr td {
+    text-align: right;
+    /* padding-left: 50%; */
+    position: relative;
+    border: 1px solid;
+  }
+  .table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: -10px;
+    width: 50%;
+    padding-left: 12px;
+    font-size: 15px;
+    text-align: left;
+    font-size: 15px;
+    /* margin-right: 10px */
+  }
+  .ant-layout {
+    background: none;
+  }
+  .ant-layout-content {
+    /* margin: 0px 80px; */
+  }
+  .table .w-50 {
+    width: 490px !important;
+  }
+  .site-layout-background {
+    padding: 0px !important;
+  }
+}
+@media (max-width: 576px) {
+  .table thead {
+    display: none;
+  }
+  .table,
+  .table body,
+  .table tr,
+  .table td {
+    display: block;
+    width: 320px;
+  }
+  .table tr {
+    margin-bottom: 15px;
+    border: 1px solid;
+    font-size: 15px;
+    margin-left: 0 !important;
+  }
+  .table tbody tr td {
+    text-align: right;
+    /* padding-left: 50%; */
+    position: relative;
+    border: 1px solid;
+  }
+  .table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: -10px;
+    width: 50%;
+    padding-left: 12px;
+    font-size: 15px;
+    text-align: left;
+    font-size: 15px;
+    /* margin-right: 10px */
+  }
+  .ant-layout {
+    background: none;
+  }
+  .ant-layout-content {
+    /* margin: 0px 80px; */
+  }
+  .table .w-50 {
+    width: 320px !important;
+  }
+  .site-layout-background {
+    padding: 0px !important;
+  }
+  .table {
+    margin-right: 10px !important;
+  }
+}
+
+
+
+
+/* UI responsitive */
+@media screen and (max-width:1200px) {
+  .movieShow{
+    width: 18vw;
+    height: 24vw;
+  }
+
+}
+
+@media screen and (max-width:992px) {
+  .movieShow{
+    width: 22vw;
+    height: 30vw;
+  }
+  .movie-title{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .movieShow{
+    width: 28vw;
+    height: 36vw;
+  }
+  .movie-title{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:576px) {
+
+}
+
+@media screen and (max-width:480px) {
+  .movieShow{
+    width: 42vw;
+    height: 60vw;
+  }
+  .showtimes{
+    width: 75%;
+  }
+}
